@@ -26,9 +26,13 @@ Useage
 Where;
 
 accesspoint.url = kURL_POST_BaseCreateAcct; is the URL
+
 accesspoint.httpMethod = @"POST"; is the http method. CASE SENSITIVE: use @"GET" or @"POST" only
+
 accesspoint.postImage = [UIImage imageNamed:@"image.png"]; if your post parameter includes an image
+
 accesspoint.postParam = @{}; Are the main parameters of the POST
+
 accesspoint.willShowCustomLoadingIndicator will show custom loading view if YES. This view will force the user to wait for the api to end before doing anything in the app. Good for controlling the USER's action and not spamming the API. If this is NO, you need to call the action indicator on the status bar.
 
 
