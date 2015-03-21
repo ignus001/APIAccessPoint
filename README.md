@@ -36,7 +36,9 @@ accesspoint.postParam = @{}; Are the main parameters of the POST
 accesspoint.willShowCustomLoadingIndicator will show custom loading view if YES. This view will force the user to wait for the api to end before doing anything in the app. Good for controlling the USER's action and not spamming the API. If this is NO, you need to call the action indicator on the status bar.
 
 
+
 Connect
+
 The connect function will do most of the things for you. Check internet connection, handle (some) failures, and log the progress of your call. You only need to catch the response by simply;
 
         [accesspoint connectWithCompletion:^(NSArray *response) {
